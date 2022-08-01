@@ -1,0 +1,1100 @@
+/* 最小尺寸-手機 373px ------------------------------------------------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'DM Serif Display', serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p, ul {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+}
+
+#all {
+  padding-top: 50px;
+}
+
+/* 固定內容左右寬度 */
+.container {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#navbar {
+  width: 100vw;
+  height: 56px;
+  /* background-color: yellow; */
+  position: fixed;
+  top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn40 {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  padding: 1px 6px 1px 6px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#btn-burger {
+  width: 24px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+
+}
+
+#btn-burger::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 6px;
+  left: 0%;
+}
+
+#btn-burger::after {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: -6px;
+  left: 0%;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+}
+
+.btn40-3 {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  padding: 1px 6px 1px 6px;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+
+#dots3 {
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 5px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#dots3::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  left: 0%;
+}
+
+#dots3::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 5px;
+  position: absolute;
+  top: -8px;
+  left: 0%;
+}
+
+.tel {
+  display: none;
+}
+
+.address {
+  display: none;
+}
+
+.btn-book {
+  display: none;
+}
+
+#home {
+  display: none;
+}
+
+
+
+
+
+/* ˊ中尺寸-平板 768px ------------------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  #navbar {
+    height: 56px;
+    display: flex;
+  }
+
+  .container {
+    width: 97%;
+  }
+
+  .tel {
+    display: none;
+  }
+
+  .address {
+    display: none;
+  }
+
+  .btn-book {
+    display: none;
+  }
+
+  #home {
+    display: none;
+  }
+
+
+
+}
+
+
+/* 大尺寸-電腦電腦 1400px ------------------------------------------------------------------------------------- */
+@media (min-width: 1400px) {
+  #navbar {
+    height: 118px;
+    display: block;
+    color: #999;
+  }
+
+  .container {
+    width: 80%;
+    position: absolute;
+  }
+
+  .top {
+    display: inline-block;
+  }
+
+  .btn40 {
+    display: none;
+  }
+
+  .btn40-3 {
+    display: none;
+  }
+
+  #logo {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+  }
+
+  /* 整塊電話------------------------------------------------------------------- */
+  .tel {
+    width: 300px;
+    height: 78px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+
+  .fa-phoneNA {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #999;
+    border-radius: 50px;
+  }
+
+  .fa-phoneNA::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tel ul {
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* 整塊地址---------------------------------------------------------------------------------- */
+  .address {
+    width: 285px;
+    height: 78px;
+    margin-left: 92px;
+    position: absolute;
+    top: 50%;
+    right:15%;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+
+  .fa-location-dotNA {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #999;
+    border-radius: 50px;
+  }
+
+  .fa-location-dotNA::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .address p {
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+
+  /* 按鈕-------------------------------------------------------------------------------------------------- */
+  .btn-book {
+    width: 190px;
+    height: 48px;
+    border: 1px solid #158;
+    background-color: #fff;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+
+  /* home排-------------------------------------------------------------------------------------------- */
+  #home {
+    width: 100%;
+    height: 64px;
+    background-color: #333;
+    list-style: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 118px;
+  }
+
+  .menu { 
+    width: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    left: -5%;
+  }
+
+  .menu .menu-item {
+    /* link */
+    width: 8%;
+    padding: 1%;
+    margin: 0 1%;
+    float: left;
+    text-align: right;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+
+  .menu-item:nth-child(1) {
+    color: rgb(255, 200, 0);
+  }
+
+  .fa-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* section01 ----------------------------------------------------------------------------- */
+  #section01 {
+    width: 100%;
+    height: 80%;
+    background-image: url('https://picsum.photos/1920/600/?random=1');
+    background-size: cover;
+    position: absolute;
+    top: 182px;
+  }
+
+  /* 大標 + 按鈕小區塊 */
+  .MFE-btn {
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
+  .MFE-btn button {
+    width: 190px;
+    height: 48px;
+    background-color: rgb(197, 161, 91);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 110%;
+    left: 2%;
+  }
+
+  #section01 h1 {
+    color: #fff;
+    font-size: 100px;
+  }
+
+  #section01 span {
+    font-style: italic;
+    color: rgb(158, 151, 142);
+  }
+
+  /* section02 ------------------------------------------------------------------------------------------- */
+  #section02 {
+    width: 100%;
+    height: 60%;
+    /* background-color: #ad1; */
+    display: inline-block;
+    position: absolute;
+    top: 150%;
+    transform: translateY(-50%);
+  }
+
+  .card02 {
+    width: 45%;
+    height: 75%;
+    /* background: #de2; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .card02L {
+    position: absolute;
+    left: 0%;
+    width: 45%;
+    height: 75%;
+    background: url('https://picsum.photos/800/600/?random=2') center center;
+    background-size: cover;
+  }
+
+  .card02R {
+    position: absolute;
+    right: 0%;
+    line-height: 1.2rem;
+  }
+
+  .card02R h1, p {
+    padding: 3% 2% 1% 2%;
+  }
+
+  .card02R p {
+    color: #999;
+    font-size: 13px;
+  }
+
+  .card02R button {
+    width: 190px;
+    height: 48px;
+    border: 1px solid #158;
+    background-color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    left: 5%;
+    bottom: 0%;
+  }
+
+  /* section03 ------------------------------------------------------------------------------------- */
+  #section03 {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 180%;
+    background-color: rgb(248, 248, 248);
+    padding: 0% 0% 8% 0%;
+  }
+
+  #section03 h1 {
+    text-align: center;
+    margin: 3% 0 3% 0;
+  }
+
+  .SC03 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .cardS03 {
+    text-align: center;
+    width: 30%;
+    height: 20%;
+  }
+
+  .cardS03 h3 {
+    margin: 2%;
+  }
+
+  .cardS03 p {
+    color: #999;
+    width: 70%;
+    text-align: center;
+    margin-left: 7%;
+
+  }
+
+  .cardS03 i {
+    width: 60px;
+    height: 60px;
+  }
+
+  .fa-2xl {
+    border: 1px solid #999;
+    border-radius: 40px;
+    
+  }
+
+  .fa-music-1::before {
+    content: "";
+    position: absolute;
+    top: 4.5%;
+    left: 19%;
+  }
+
+  .fa-guitar::before {
+    content: "";
+    position: absolute;
+    top: 4.5%;
+    left: 49%;
+  }
+
+  .fa-microphone::before {
+    content: "";
+    position: absolute;
+    top: 4.5%;
+    left: 79%;
+  }
+
+  .fa-napster::before {
+    content: "";
+    position: absolute;
+    top: 54.5%;
+    left: 19%;
+  }
+
+  .fa-sliders::before {
+    content: "";
+    position: absolute;
+    top: 54.5%;
+    left: 49%;
+  }
+
+  .fa-headphones::before {
+    content: "";
+    position: absolute;
+    top: 54.5%;
+    left: 79%;
+  }
+
+  /* section04 ------------------------------------------------------------------------------------------- */
+  #section04 {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 280%;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  #section04 h1 {
+    margin-top: 3%;
+  }
+
+  
+  #section04 p {
+    padding-top: 2%;
+  }
+
+  .SC04 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap; 
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+
+  .card04 {
+    text-align: center;
+    width: 23%;
+    margin: 1%;
+  }
+
+  .card04 img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .card04 p {
+    text-align: left;
+  }
+
+  /* section05 --------------------------------------------------------------------------------------- */
+  #section05 {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    background-color: #999;
+    background-image: url('https://picsum.photos/1920/1080/?random=7'); /* 底圖滑動未做 */
+    background-size: cover;
+    color: #fff;
+    
+    position: absolute;
+    top: 350%;
+  }
+
+  .SC05 {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .SC05 p {
+    padding: 2% 0% 2% 0%;
+  }
+
+  .SC05 span {
+    font-style: italic;
+  }
+
+  .btn05 {
+    width: 190px;
+    height: 48px;
+    border: 0px solid #158;
+    background-color: rgb(197, 161, 91);
+    color: #fff;
+
+    border-radius: 8px;
+    display: inline-block;
+  }
+
+  /* section06 ---------------------------------------------------------------------------- */
+  #section06 {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 410%;
+  }
+
+  .SC06 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card06 {
+    width: 28%;
+    display: inline-block;
+    text-align: left;
+    margin: 6% 1% 0% 1%;
+    line-height: 1.2rem;
+  }
+
+  .card06 p {
+    padding: 0%;
+  }
+
+  .card06 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+
+  .card06-vc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -17%;
+  }
+
+  /* section07 ------------------------------------------------------------------------ */
+  #section07 {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+
+    background-image: url('../imgs/parallax-counter.jpg'); /* 底圖滑動未做 */
+    background-size: cover;
+    color: #fff;
+
+    position: absolute;
+    top: 470%;
+  }
+
+  .SC07T {
+    margin-top: 5%;
+  }
+
+  .SC07T p {
+    padding: 2% 0 0 0;
+  }
+
+  .SC07 {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 8%;
+  }
+
+  .SC07 i {
+    position: relative;
+    margin-bottom: 30%;
+  }
+
+  /* section08 ---------------------------------------------------------------------------- */
+  #section08 {
+    width: 100%;
+    height: 80%;
+    text-align: center;
+
+    position: absolute;
+    top: 550%;
+  }
+
+  #section08 h1 {
+    margin-bottom: 5%;
+  }
+
+  .SC08 {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card08 {
+    margin: 0 2% 0 2%;
+    text-align: left;
+  }
+
+  .card08 h3 {
+    color: rgb(197, 161, 91);
+  }
+
+  .card08 p {
+    padding: 2% 0 0 0 ;
+    color: #999;
+  }
+  
+  /* section09 --------------------------------------------------------------------- */
+  #section09 {
+    width: 100%;
+    height: 15%;
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    top: 625%;
+  }
+
+  .BTN09 {
+    width: 190px;
+    height: 48px;
+    border: 0px solid #158;
+    background-color: rgb(197, 161, 91);
+    color: #fff;
+
+    border-radius: 8px;
+    display: inline-block;
+    
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+
+  .SC09 {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .SC09 h3 {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+  }
+  .SC09 span {
+    font-style: italic;
+
+  }
+
+  /*section10 ---------------------------------------------------------------------------------------  */
+  #section10 {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 645%;
+    text-align: center;
+  }
+
+  .SC10 {
+    width: 100%;
+    text-align: left;
+    
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card10 {
+    width: 45%;
+    height: 100%;
+    margin: 3%;
+  }
+
+  .card10 img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .card10 p {
+    padding: 0%;
+    margin: 3% 0% 3% 0%;
+    line-height: 1.5rem;
+    color: #999;
+
+  }
+  
+  .card10 span {
+    color: #999;
+  }
+
+  .card10 h4 {
+    color: rgb(197, 161, 91);
+    margin: 3% 0% 3% 0%;
+  }
+  
+  #section10 button {
+    width: 190px;
+    height: 48px;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  /* section11 ----------------------------------------------------------------- */
+  #section11 {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 740%;
+    text-align: left;
+    background-color: rgb(248, 248, 248);
+  }
+
+  #section11 h1 {
+    margin: 5% 0% 2% 0%;
+  }
+
+  .SC11 {
+    width: 50%;
+    position: absolute;
+    left: 0%;
+  }
+
+  .SC11-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .SC11-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input {
+    position: relative;
+    left: 0%;
+    top: 100%;
+    padding-bottom: 5%;
+  }
+
+  .SC11 input {
+    width: 200%;
+    height: 80%;
+  }
+
+  .input p {
+    color: #999;
+    padding: 10px 0 10px 0 ;
+  }
+
+  .SC11 textarea {
+    width: 100%;
+    height: 80%;
+  }
+
+  .btn11-1 {
+    width: 190px;
+    height: 48px;
+    background-color: rgb(197, 161, 91);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .btn11-2 {
+    width: 190px;
+    height: 48px;
+    color: #000;
+    border: 1px solid #111;
+    border-radius: 8px;
+  }
+
+  /* section12 ------------------------------------------------------------------ */
+  #section12 {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    top: 800%;
+  }
+
+  .SC12 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+
+    border-collapse:collapse;
+  }
+
+  .tel12 {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    top: 30%;
+    display: inline-block;
+
+    border-right: 1px solid rgb(197, 161, 91);
+    border-left:  1px solid rgb(197, 161, 91);
+  }
+
+  .tel12 ul {
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    color: #999;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mail12 {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    top: 30%;
+    display: inline-block;
+
+    border-right: 1px solid rgb(197, 161, 91);
+  }
+
+  .mail12 p {
+    display: inline-block;
+    color: #999;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+  }
+
+  .address12 {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    top: 30%;
+    display: inline-block;
+
+    border-right: 1px solid rgb(197, 161, 91);
+  }
+
+  .address12 p {
+    width: 80%;
+    text-align: center;
+    color: #999;
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fa-phone12 {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fa-phone12::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(197, 161, 91);
+  }
+
+  .fa-envelope12 {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fa-envelope12::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(197, 161, 91);
+  }
+
+  .fa-location-dot12 {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fa-location-dot12::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(197, 161, 91);
+  }
+
+  /* section13 -------------------------------------------------------------- */
+  #section13 {
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    top: 825%;
+    color: #fff;
+    background: #000;
+  }
+
+  .SC13 {
+    margin-top: 5%;
+  }
+
+}
